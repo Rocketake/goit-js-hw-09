@@ -1,0 +1,20 @@
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close {
+  color: white;
+
+  font-size: 32px;
+}
+
+.sl-wrapper .sl-navigation .sl-next {
+  color: white;
+}
+.sl-wrapper .sl-navigation .sl-prev {
+  color: white;
+}
+
+.sl-wrapper .sl-counter {
+  color: white;
+}
