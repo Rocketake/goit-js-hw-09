@@ -18,12 +18,12 @@ if (localStorageValue === '') {
 
 const handleInput = event => {
   const targetName = event.target.name;
+
   if (
     targetName ===
     Object.keys(formData)[Object.keys(formData).indexOf(targetName)]
   ) {
     formData[targetName] = event.target.value;
-    console.log(formData);
   }
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
@@ -33,7 +33,6 @@ form.addEventListener('input', handleInput);
 const handleSubmit = event => {
   event.preventDefault();
   if (formData.email && formData.message) {
-    console.log(formData);
     localStorage.removeItem('feedback-form-state');
     formData.email = '';
     formData.message = '';
