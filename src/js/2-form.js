@@ -33,6 +33,7 @@ form.addEventListener('input', handleInput);
 const handleSubmit = event => {
   event.preventDefault();
   if (formData.email && formData.message) {
+    console.log(formData);
     localStorage.removeItem('feedback-form-state');
     formData.email = '';
     formData.message = '';
