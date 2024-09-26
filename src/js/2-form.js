@@ -23,7 +23,7 @@ const handleInput = event => {
     targetName ===
     Object.keys(formData)[Object.keys(formData).indexOf(targetName)]
   ) {
-    formData[targetName] = event.target.value;
+    formData[targetName] = event.target.value.trim();
   }
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
